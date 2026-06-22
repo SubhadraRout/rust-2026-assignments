@@ -2,11 +2,16 @@
 
 ## Approach
 
-_Describe your approach here._
+I looped through each character in the input string. If it was an uppercase or lowercase letter, I shifted it by the given amount while wrapping around the alphabet. Non-letter characters were left unchanged.
 
 ## Edge cases handled
 
+* Empty string
+* Negative shifts
+* Large shifts
+* Uppercase and lowercase letters
+* Digits, punctuation, and spaces
 
 ## Anything special
 
-_Tricks, alternatives you considered, performance notes, etc._
+I used `ALPHABET.len()` to determine the alphabet size instead of hard-coding `26`.
