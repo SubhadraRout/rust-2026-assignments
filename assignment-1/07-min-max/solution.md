@@ -1,12 +1,17 @@
-# Solution notes: `min_max`
+# Solution notes: Min Max
 
 ## Approach
 
-_Describe your approach here._
+I first checked if the slice was empty. If it was, I returned `None`. Otherwise, I initialized the minimum and maximum with the first element and updated them while looping through the slice once.
 
 ## Edge cases handled
 
+* Empty slice
+* Single element
+* All equal elements
+* Negative numbers
+* Large and small integer values
 
 ## Anything special
 
-_Tricks, alternatives you considered, performance notes, etc._
+The solution uses a single `for` loop without any iterator helper methods, as required.
